@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:elevation="@dimen/margin_top"
+                                    card_view:cardCornerRadius="5dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="@color/white"
+                  android:orientation="vertical"
+                  android:padding="2dp"
+                  tools:context="com.example.aberchrombie.shar.MainActivity">
+
+        <include layout="@layout/imageview_layout"/>
+
+        <TextView
+            android:id="@+id/text_view_description"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="@string/top_description"
+            android:textSize="@dimen/text_view_size"/>
+
+        <TextView
+            android:id="@+id/text_view_title"
+            style="@style/TextAppearance.AppCompat.SearchResult.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/title"
+            android:textSize="@dimen/title_text_size"/>
+
+        <TextView
+            android:id="@+id/text_view_promo_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/promo_message"
+            android:textSize="@dimen/text_view_promo_message_size"/>
+
+        <TextView
+            android:id="@+id/tv_bottom_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin_top_bottom_description"
+            android:text="@string/bottom_description"
+            android:textSize="@dimen/text_view_bottom_description_size"/>
+
+        <Button
+            android:id="@+id/bt_shop_men"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/shop_buttons_padding_right"
+            android:layout_marginLeft="@dimen/shop_buttons_padding_left"
+            android:layout_marginRight="@dimen/shop_buttons_padding_right"
+            android:layout_marginStart="@dimen/shop_buttons_padding_left"
+            android:layout_marginTop="@dimen/text_view_bottom_description_size"
+            android:background="@drawable/button_background"
+            android:onClick="onClick"
+            android:text="@string/shop_m"/>
+
+        <Button
+            android:id="@+id/bt_shop_women"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/shop_buttons_padding_right"
+            android:layout_marginLeft="@dimen/shop_buttons_padding_left"
+            android:layout_marginRight="@dimen/shop_buttons_padding_right"
+            android:layout_marginStart="@dimen/shop_buttons_padding_left"
+            android:layout_marginTop="@dimen/text_view_bottom_description_size"
+            android:background="@drawable/button_background"
+            android:onClick="onClick"
+            android:text="@string/shop_w"/>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

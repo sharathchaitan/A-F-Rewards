@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TextView Sizes-->
+    <dimen name="text_view_size">13sp</dimen>
+    <dimen name="text_view_promo_message_size">11sp</dimen>
+    <dimen name="title_text_size">17sp</dimen>
+    <dimen name="text_view_bottom_description_size">13sp</dimen>
+    <!--Height Sizes-->
+    <dimen name="margin_top">3dp</dimen>
+    <dimen name="margin_top_bottom_description">10dp</dimen>
+    <dimen name="shop_buttons_padding_left">18dp</dimen>
+    <dimen name="shop_buttons_padding_right">18dp</dimen>
+</resources>
